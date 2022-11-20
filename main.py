@@ -1,3 +1,8 @@
+import random
+print(random.randint(1, 5))
+
+
+
 print(''' 
       English Description:
       Welcome to "Rock, paper, scissors, lizard, Spock"
@@ -32,3 +37,9 @@ print('''
        *Y como siempre, piedra rompe tijera
       ---------------------------------------------------
       ''')
+
+
+
+def verification(decision_player, decision_comp):
+      pass
+      
