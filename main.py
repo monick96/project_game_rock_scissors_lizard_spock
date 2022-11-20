@@ -1,6 +1,7 @@
 print(''' 
       English Description:
       Welcome to "Rock, paper, scissors, lizard, Spock"
+      🥌 📋 ✂ 🦎 🖖
       Rules:
       
       *Scissors cut paper
@@ -29,5 +30,5 @@ print('''
        *El papel desautoriza a Spock
        *Spock vaporiza piedra
        *Y como siempre, piedra rompe tijera
-      
+      ---------------------------------------------------
       ''')
