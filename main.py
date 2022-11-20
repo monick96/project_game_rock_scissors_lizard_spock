@@ -32,3 +32,15 @@ print('''
        *Y como siempre, piedra rompe tijera
       ---------------------------------------------------
       ''')
+
+user_name = input('Enter your name => ')
+user_option= input("Choose an option: Rock, paper, scissors, lizard or Spock => ").lower()
+print(f'{user_name} you have selected: {user_option} \n')
+print("Now it's the computer's turn")
+
+'''
+1 =rock 2=paper 3=scissors 4=lizard 5=spock
+'''
+computer_option = 0
+if computer_option == 1:
+    print(f"the computer has chosen: rock")
