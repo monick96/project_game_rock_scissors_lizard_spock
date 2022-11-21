@@ -1,5 +1,56 @@
 import random
 
+def computer_attack(computer_option):
+    if computer_option == "rock":
+        return "the computer has chosen: Rock"
+    elif computer_option == "paper":
+        return "the computer has chosen: Paper"
+    elif computer_option == "scissors":
+        return "the computer has chosen: Scissors" 
+    elif computer_option == "lizard":
+        return "the computer has chosen: Lizard"
+    elif computer_option == "spock":
+        return "the computer has chosen: Spock"
+    
+def combat(user_option,computer_option):
+    if user_option == computer_option:
+        return "This is a draw!"
+    elif user_option == "rock":
+        if computer_option == "scissors":
+            return "rock breaks scissor, you win! 🎉 "
+        elif computer_option == "lizard":
+            return "Rock crushes lizard, you win! 🎉"
+        else:
+            return "Computer win, you lose 😢 !"
+    elif user_option == "paper":
+        if computer_option == "rock" :
+            return "Paper covers stone, you win! 🎉"
+        elif computer_option == "spock":
+            return "Paper overrules Spock, you win! 🎉"
+        else:
+            return "Computer win, you lose 😢 !"
+    elif user_option == "scissors":
+        if computer_option == "paper":
+            return "Scissors cut paper, you win! 🎉"
+        elif computer_option == "lizard":
+            return "Scissors decapitates lizard, you win! 🎉"
+        else:
+            return "Computer win, you lose 😢 !"
+    elif user_option == "lizard":
+        if computer_option == "paper":
+            return "Lizard devours paper, you win! 🎉"
+        elif computer_option == "spock":
+            return "Lizard poisons Spock, you win! 🎉"
+        else:
+            return "Computer win, you lose 😢 !"
+    elif user_option == "spock":
+        if computer_option == "scissors":
+            return "Spock breaks scissors, you win! 🎉"
+        elif computer_option == "rock":
+            return "Spock vaporizes rock, you win! 🎉"
+        else:
+            return "Computer win, you lose 😢 !"
+        
 
 print(""" 
       English Description:
@@ -73,60 +124,9 @@ print("Now it's the computer's turn")
 computer_option = options[random.randint(0, 4)]
 
 #print computer option
-def computer_attack(computer_option):
-    if computer_option == "rock":
-        return "the computer has chosen: Rock"
-    elif computer_option == "paper":
-        return "the computer has chosen: Paper"
-    elif computer_option == "scissors":
-        return "the computer has chosen: Scissors" 
-    elif computer_option == "lizard":
-        return "the computer has chosen: Lizard"
-    elif computer_option == "spock":
-        return "the computer has chosen: Spock"
-
 print(computer_attack(computer_option))
 
 print("---------------------------------------")
 
 #combat
-def combat(user_option,computer_option):
-    if user_option == computer_option:
-        return "This is a draw!"
-    elif user_option == "rock":
-        if computer_option == "scissors":
-            return "rock breaks scissor, you win! 🎉 "
-        elif computer_option == "lizard":
-            return "Rock crushes lizard, you win! 🎉"
-        else:
-            return "Computer win, you lose 😢 !"
-    elif user_option == "paper":
-        if computer_option == "rock" :
-            return "Paper covers stone, you win! 🎉"
-        elif computer_option == "spock":
-            return "Paper overrules Spock, you win! 🎉"
-        else:
-            return "Computer win, you lose 😢 !"
-    elif user_option == "scissors":
-        if computer_option == "paper":
-            return "Scissors cut paper, you win! 🎉"
-        elif computer_option == "lizard":
-            return "Scissors decapitates lizard, you win! 🎉"
-        else:
-            return "Computer win, you lose 😢 !"
-    elif user_option == "lizard":
-        if computer_option == "paper":
-            return "Lizard devours paper, you win! 🎉"
-        elif computer_option == "spock":
-            return "Lizard poisons Spock, you win! 🎉"
-        else:
-            return "Computer win, you lose 😢 !"
-    elif user_option == "spock":
-        if computer_option == "scissors":
-            return "Spock breaks scissors, you win! 🎉"
-        elif computer_option == "rock":
-            return "Spock vaporizes rock, you win! 🎉"
-        else:
-            return "Computer win, you lose 😢 !"
-
 print(combat(user_option,computer_option))
