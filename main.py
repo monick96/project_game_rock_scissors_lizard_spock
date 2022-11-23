@@ -121,7 +121,8 @@ print("Now it's the computer's turn")
 1 =rock 2=paper 3=scissors 4=lizard 5=spock
 """
 #random option assignment from option list
-computer_option = options[random.randint(0, 4)]
+#computer_option = options[random.randint(0, 4)]
+computer_option = random.choice(options)
 
 #print computer option
 print(computer_attack(computer_option))
