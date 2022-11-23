@@ -1,0 +1,13 @@
+mesajes en tuplas de :
+Rules:
+      
+      *Scissors cut paper
+      *Paper covers stone
+      *Rock crushes lizard
+      *Lizard poisons Spock
+      *Spock breaks scissors
+      *Scissors decapitates lizard
+      *Lizard devours paper
+      *Paper overrules Spock
+      *Spock vaporizes stone
+      *And as always, rock breaks scissor
