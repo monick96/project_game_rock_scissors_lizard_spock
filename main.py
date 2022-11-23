@@ -150,17 +150,17 @@ while ((count_wins_player < wins) and (count_wins_computer < wins)):
     """
     #random option assignment from option list
     #computer_option = options[random.randint(0, 4)]
-computer_option = random.choice(options)
+    computer_option = random.choice(options)
 
-#print computer option
-print(computer_attack(computer_option))
+    #print computer option
+    print(computer_attack(computer_option))
 
-print("---------------------------------------")
+    print("---------------------------------------")
 
-#combat
-print(combat(user_option,computer_option), "\n")
+    #combat
+    print(combat(user_option,computer_option), "\n")
 
-print(f"The player {user_name} wins {count_wins_player} times, computer wins {count_wins_computer} times. \n")
+    print(f"The player {user_name} wins {count_wins_player} times, computer wins {count_wins_computer} times. \n")
 
 #final message
 if count_wins_player == wins:
