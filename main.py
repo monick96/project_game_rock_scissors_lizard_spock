@@ -10,7 +10,7 @@ def player_attack():
     attack = input("Choose an option: Rock, paper, scissors, lizard or Spock => ").lower()
     # validate user input with while
     while(not (attack in options)):
-            print("wrong option")
+            print("Wrong option, please try again")
             attack = input("Choose an option: Rock, Paper, Scissors, Lizard or Spock => ").lower()
     #other ways to validate user input with while
     """
